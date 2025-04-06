@@ -40,7 +40,7 @@ const Profile = () => {
     // Fetch student data from the API
     const fetchStudentData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/api/student/getStudentById`, {
+        const response = await axios.get(`https://lms-backend-zeta-kohl.vercel.app/api/student/getStudentById`, {
           params: { userId },
           headers: { token }
         })
@@ -63,7 +63,7 @@ const Profile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.put(`http://localhost:8080/api/student/updateStudentById`, studentData, {
+      await axios.put(`https://lms-backend-zeta-kohl.vercel.app/api/student/updateStudentById`, studentData, {
         headers: { token }
       })
       alert('Profile updated successfully!')

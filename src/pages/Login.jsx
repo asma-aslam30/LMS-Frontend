@@ -27,7 +27,7 @@ const Login = () => {
     setErrorMessage('')
 
     try {
-      const response = await axios.post('http://localhost:8080/api/users/login', {
+      const response = await axios.post('https://lms-backend-zeta-kohl.vercel.app/api/users/login', {
         email: formData.email,
         password: formData.password
       }, {
