@@ -39,6 +39,7 @@ const Login = () => {
       if (response.status === 200) {
         console.log('Login successful:', response.data)
         await sessionStorage.setItem('token', response.data.token)
+        await sessionStorage.setItem('userId', response.data.userId)
         // You can store token here: localStorage.setItem('token', response.data.token)
         navigate('/dashboard')
       }

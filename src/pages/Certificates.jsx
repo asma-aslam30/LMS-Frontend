@@ -2,17 +2,17 @@ import React from 'react'
 import { Container, Typography } from '@mui/material'
 import Navbar from '../components/Navbar'
 
-const Dashboard = () => {
+const Certificates = () => {
   return (
     <>
       <Navbar />
       <Container>
-        <Typography variant="h3" mt={5} mb={3}>
-          Welcome to Dashboard!
+        <Typography variant="h4" mt={5}>
+            Certificates Page
         </Typography>
       </Container>
     </>
   )
 }
 
-export default Dashboard
+export default Certificates
