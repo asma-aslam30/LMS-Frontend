@@ -34,7 +34,7 @@ const Signup = () => {
     setErrorMessage('')
 
     try {
-      const response = await axios.post('https:/lms-backend-three-nu.vercel.app/api/users/signup', formData, {
+      const response = await axios.post('https://lms-backend-production-939d.up.railway.app//api/users/signup', formData, {
         headers: {
           'Content-Type': 'application/json'
         }
