@@ -63,7 +63,7 @@ const Profile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.put(`https://lms-backend-zeta-kohl.vercel.app/api/student/updateStudentById`, studentData, {
+      await axios.put(`lms-backend-three-nu.vercel.app/api/student/updateStudentById`, studentData, {
         headers: { token }
       })
       alert('Profile updated successfully!')
